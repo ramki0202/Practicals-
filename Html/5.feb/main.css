@@ -1,4 +1,39 @@
 body{
-    Color:white;
-    background: #000;
+    font-family: poppins;
 }
+.header{background-color: #1c150c;}
+h1{
+    color:#ffc04a;
+    font-weight: 700;
+    font-size: 36px;
+}
+h2{
+    color:#7c2f25;
+    font-weight:600;
+}
+.header-phe{
+    color:#fff;
+}
+
+.header-abtus{
+    margin-top:114px;
+    margin-bottom: 114px;
+}
+.margin_sec{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+input { 
+    width:50%;
+    margin:5px;
+    padding:10px;
+}
+
+@media (max-width: 575.98px) { 
+
+    h2{
+        font-size:22px;
+      
+    } 
+
+ }
