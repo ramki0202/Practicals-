@@ -68,7 +68,7 @@ input {
         overflow-y: visible;
     }
 }
-/*
+
 .nav-link {
     font-family: poppins;
     font-size:16px;
@@ -88,7 +88,9 @@ input {
     margin-left: 25px;
 }
 
-*/
+.navbar{
+    background-color:#1c150c; 
+}
 
 
 
@@ -98,7 +100,7 @@ input {
 
 
 
-/*
+
 @media (max-width: 575.98px) { 
 
     h2{
@@ -106,4 +108,7 @@ input {
       
     } 
 
- }*/
+ }
+
+
+
