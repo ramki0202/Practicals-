@@ -1,7 +1,9 @@
 body{
     font-family: poppins;
 }
+
 .header{background-color: #1c150c;}
+
 h1{
     color:#ffc04a;
     font-weight: 600;
@@ -11,6 +13,7 @@ h2{
     color:#7c2f25;
     font-weight:600;
 }
+
 .header-phe{
     color:#fff;
 }
@@ -38,7 +41,9 @@ input {
     left: -100%;
     max-width: 300px;
     transition: all ease 0.25s;
+    background-color: #1c150c;
 }
+
 
 .overlay{
     left: 0;
@@ -80,9 +85,7 @@ input {
 .nav-link:hover{
     color:#ffc04a!important;
 }
-.navbar {
-    padding-left:0 !important;
-}
+
 
 .navbar-nav{
     margin-left: 25px;
@@ -91,12 +94,6 @@ input {
 .navbar{
     background-color:#1c150c; 
 }
-
-
-
-
-
-
 
 
 
