@@ -56,6 +56,18 @@ input {
 .main-navigation.active .overlay{
     visibility:visible;
 }
+
+@media (min-width: 992px){
+    .sidebar{
+        position:relative;
+        top:auto;
+        left:auto;
+        flex-direction: row;
+        max-width:100%;
+        transition:none;
+        overflow-y: visible;
+    }
+}
 /*
 .nav-link {
     font-family: poppins;
