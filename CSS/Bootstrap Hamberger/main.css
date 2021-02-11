@@ -28,6 +28,34 @@ input {
     margin:5px;
     padding:10px;
 }
+.sidebar,
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+.sidebar{
+    left: -100%;
+    max-width: 300px;
+    transition: all ease 0.25s;
+}
+
+.overlay{
+    left: 0;
+    right:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.75);
+    visibility: hidden;
+}
+
+.main-navigation.active .sidebar{
+    left:0;
+}
+
+.main-navigation.active .overlay{
+    visibility:visible;
+}
 /*
 .nav-link {
     font-family: poppins;
