@@ -14,6 +14,12 @@ h2{
     font-weight:600;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .header-phe{
     color:#fff;
 }
@@ -26,15 +32,8 @@ h2{
     px;
     margin-bottom: 70px;
 }
-.margin_sec{
-    margin-top:30px;
-    margin-bottom: 30px;
-}
-input { 
-    width:50%;
-    margin:5px;
-    padding:10px;
-}
+
+
 .sidebar,
 .overlay {
     position: fixed;
@@ -57,7 +56,9 @@ input {
     background-color: rgba(0,0,0,0.75);
     visibility: hidden;
 }
-
+.box-m{
+    width:33.333%;
+}
 .main-navigation.active .sidebar{
     left:0;
 }
