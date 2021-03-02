@@ -9,5 +9,28 @@
     background-color: white;
     margin: 15px;
     border-radius: 25px;
+    animation-name: round;
+    animation-duration:5s;
+    animation-iteration-count: 100;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes move {
+    from { transform:translateX(5px)}
+    to {transform:translateX(925px)}
+}
+
+@keyframes round{
+    0%{ transform: translateX(0) translateY(0px)}
+    25%{transform: translateX(150px) translateY(425px)}
+    50%{transform: translateX(400px) translateY(0px)}
+    75%{transform: translateX(600px) translateY(425px)}
+    100%{transform: translateX(850px) translateY(0px)}
+ 
+
+   
     
 }
