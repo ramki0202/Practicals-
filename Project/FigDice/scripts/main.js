@@ -47,8 +47,12 @@ rollDice.addEventListener("click", function () {
     dice.src = images[index];
     index++;
   }
-  scoreAddition = Number(scoreAddition) + index;
-  player1Score.textContent = scoreAddition;
+  if (index == 1) {
+    player1Score.textContent = 0;
+  } else {
+    scoreAddition = Number(scoreAddition) + index;
+    player1Score.textContent = scoreAddition;
+  }
 });
 
 // logics1(if the starting point is score will be 0 and dice is hidden)
@@ -61,8 +65,8 @@ player2Score.textContent = 0;
 /*
 
 Task: 
-    1). When user click RollDice button he will get random dice image
-    2). to assign the value of random dice in the current score
+    // 1). When user click RollDice button he will get random dice image
+    // 2). to assign the value of random dice in the current score
     3). to add the current score in the same window 
     4). if user get 1 value he will lose all his/her scores
     5). if user click the hold button, his current score will be store in highscore board
