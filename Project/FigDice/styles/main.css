@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +8,195 @@
 }
 
 body {
+  background: linear-gradient(to top left, #8a19e0 0%, #04baff 100%) no-repeat;
+  display: flex;
   height: 100vh;
-  background: linear-gradient(to top left, #3261e4 0%, #a92ebf 100%) no-repeat;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 35px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+.main-box {
+  height: 85vh;
+  background-color: rgb(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.player-box {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.figLogo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  position: relative;
+}
+.dice {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  z-index: 1;
+}
+.i-btn {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  border-radius: 50px;
+  padding: 5px 15px 5px 15px;
+  font-weight: 700;
+  background-color:white;
+}
+.close-modal {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.figlogo {
+  width: 20%;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin: 5px;
+}
+.highscore1 {
+  font-size: 46px;
+  font-weight: 800;
+}
+.highscore2 {
+  font-size: 46px;
+  font-weight: 800;
+}
+.play {
+  background-color: #3e73f1;
+  color: white;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+.current-score {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+}
+.current-score-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.new-game {
+  padding: 10px 25px 10px 25px;
+  background-color: #920101;
+  color: white;
+  font-size: 18px;
+  border-radius: 55px;
+  min-width: 100px;
+}
+.roll-dice {
+  background: url("images/dice.png");
+  background-position: 20px;
+  background-repeat: no-repeat;
+  padding: 10px 40px 15px 65px;
+  background-color: #000000;
+  color: white;
+  font-size: 25px;
+  border-radius: 55px;
+  width: 200px;
+}
+.hold {
+  padding: 10px 25px 10px 25px;
+  background-color: #09641b;
+  color: white;
+  font-size: 18px;
+  border-radius: 55px;
+  min-width: 120px;
+}
+.play-box {
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+  .main-box {
+    width: 100% !important;
+    padding: 0;
+    margin: auto;
+  }
+  .player-box {
+    margin: 5px;
+  }
+  .figlogo {
+    width: 40% !important;
+  }
+  .play {
+    margin: 0;
+    width: 90%;
+  }
+  .current-score-title {
+    font-size: 17px;
+  }
+  .dice {
+    width: 75px;
+  }
+  .i-btn {
+    right: 5px;
+    top: -5px;
+  }
+  .model {
+
+    width: 70%;
+
+  
 }
