@@ -110,11 +110,11 @@ body {
 .btn {
   margin: 5px;
 }
-.highscore1 {
+.player1-highscore {
   font-size: 46px;
   font-weight: 800;
 }
-.highscore2 {
+.player2-highscore {
   font-size: 46px;
   font-weight: 800;
 }
@@ -126,7 +126,12 @@ body {
   margin: 0 auto 15px;
   border-radius: 10px;
 }
-.current-score {
+.player1-CurrentScore {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+}
+.player2-CurrentScore {
   font-size: 26px;
   padding: 0;
   margin: 0;
