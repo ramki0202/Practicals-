@@ -30,3 +30,12 @@ const dice = document.querySelector(".dice");
 const newGame = document.querySelector(".new-game");
 const rollDice = document.querySelector(".roll-dice");
 const hold = document.querySelector(".hold");
+let diceNumber = Math.trunc(Math.random() * 6) + 1;
+
+// logics1(if the starting point is score will be 0 and dice is hidden)
+player1HighScore.textContent = 0;
+player2HighScore.textContent = 0;
+player1Score.textContent = 0;
+player2Score.textContent = 0;
+
+//Problem Solving
