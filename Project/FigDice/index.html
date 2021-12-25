@@ -16,31 +16,35 @@
             <div class="row main-box">
               <div class="col-md-12 figLogo-box">
                 <img class="figlogo" src="images/FIGFORCE LOGO.png" alt="" />
-                <img class="dice" id="dice" src="images/dice-6.png" alt="" />
+                <img
+                  class="dice hidden"
+                  id="dice"
+                  src="images/dice-6.png"
+                  alt=""
+                />
                 <button class="btn i-btn">i</button>
               </div>
 
-              <div class="col-md-4 player-box box1 text-center">
+              <div class="col-md-4 player-box box1 player--acitve text-center">
                 <h2 class="player1 mt-5">PLAYER1</h2>
-                <p class="player1-highscore">25</p>
+                <p class="player0-highscore">0</p>
                 <div class="play">
                   <h5 class="current-score-title">CURRENT SCORE</h5>
-                  <p class="player1-CurrentScore">6</p>
+                  <p class="player0-CurrentScore">0</p>
                 </div>
               </div>
 
               <div class="col-md-4 player-box box2 text-center">
                 <h2 class="player2 mt-5">PLAYER2</h2>
-                <p class="player2-highscore">25</p>
+                <p class="player1-highscore">0</p>
                 <div class="play">
                   <h5 class="current-score-title">CURRENT SCORE</h5>
-                  <p class="player2-CurrentScore">6</p>
+                  <p class="player1-CurrentScore">0</p>
                 </div>
               </div>
 
               <div class="container">
                 <div class="row buttons">
-                  <button class="btn new-game">New Game</button>
                   <button
                     style="background-image: url('images/dice.png')"
                     class="btn roll-dice"
@@ -55,15 +59,31 @@
         </div>
       </div>
     </div>
-    <div class="model hidden">
+    <div class="player-name text-center">
+      <img src="images/" alt="" " />
+      <input class="player1-name" type="text" placeholder="Player1 Name" />
+      <input class="player2-name" type="text" placeholder="Player2 Name" />
+      <button class="play">Play</button>
+    </div>
+
+    <div class="Win hidden text-center">
       <p>
-        <button class="close-modal">&times;</button>
+        <button class="win-close-modal">&times;</button>
+        Ramki Win the game
+      </p>
+    </div>
+    <button class="btn new-game hidden">New Game</button>
+
+    <div class="model hidden">
+      <button class="close-modal">&times;</button>
+      <p>
         lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor lorem
         ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum
         dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor
         sit lorem ipsum dolor sit lorem ipsum dolor
       </p>
     </div>
+    <div class="overlay2"></div>
     <div class="overlay hidden"></div>
 
     <script src="scripts/main.js"></script>

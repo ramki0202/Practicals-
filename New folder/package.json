@@ -1,0 +1,14 @@
+{
+  "name": "figforce",
+  "version": "1.0.0",
+  "description": "test page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramki",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
